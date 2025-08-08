@@ -6,14 +6,14 @@ This repository documents various attempts to set up MCP (Model Context Protocol
 
 ## Repository Structure
 
-- `/shopify-mcp/` - Documentation for Shopify MCP setup attempts
+- `/failed-mcps/` - Documentation for MCP servers that failed to work
+  - `/shopify-mcp/` - Shopify MCP setup attempts (3 implementations tried)
 - `/working-mcps/` - Documentation for successfully configured MCP servers
 - `/troubleshooting/` - General MCP troubleshooting guides
-- `/configs/` - Example configuration files
 
 ## Quick Links
 
-- [Shopify MCP Setup Attempts](./shopify-mcp/README.md)
+- [Failed MCPs Documentation](./failed-mcps/README.md)
 - [Working MCP Configurations](./working-mcps/README.md)
 - [Troubleshooting Guide](./troubleshooting/README.md)
 
@@ -32,13 +32,20 @@ The Model Context Protocol (MCP) is a protocol that allows Claude Desktop to int
 - klaviyo
 - hf-mcp-server (Hugging Face)
 
-### ❌ Non-functional MCP Servers
-- Shopify (multiple implementations attempted)
+### ❌ Failed MCP Servers
+- **Shopify** - Multiple implementations attempted, all failed with similar issues
+
+## Key Findings
+
+- Working MCPs share common patterns (NPX-based, official packages)
+- Failed MCPs suffer from protocol incompatibility issues
+- Silent failures make debugging extremely difficult
+- Need for better MCP protocol standardization and documentation
 
 ## Contributing
 
-Feel free to contribute documentation for your own MCP setup experiences by submitting a pull request.
+This is a private repository for internal documentation. Please document any new MCP setup attempts, whether successful or failed, to help build our knowledge base.
 
 ## License
 
-MIT License - Feel free to use this documentation for your own MCP setups.
+Private repository - For internal use only
