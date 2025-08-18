@@ -127,7 +127,7 @@ This directory contains documentation for MCP servers that are working correctly
 **Status**: ✅ Working
 **Functionality**: Hugging Face model interaction
 
-### 8. Google Analytics MCP ⭐ NEW
+### 8. Google Analytics MCP
 ```json
 {
   "google-analytics": {
@@ -149,6 +149,29 @@ This directory contains documentation for MCP servers that are working correctly
 - Quota project configuration in ADC
 - pipx installation (not npm/npx based)
 - Authentication via gcloud CLI
+
+### 9. HTML to Design MCP ⭐ NEW
+```json
+{
+  "html-to-design": {
+    "command": "uvx",
+    "args": [
+      "mcp-proxy",
+      "--transport",
+      "streamablehttp",
+      "https://h2d-mcp.divriots.com/[USER_TOKEN]/mcp"
+    ]
+  }
+}
+```
+**Status**: ✅ Working (August 18, 2025)
+**Functionality**: Convert HTML/CSS to Figma designs
+**Documentation**: [Full Setup Guide](./html-to-design-mcp.md)
+
+#### Key Requirements:
+- Figma account with HTML to Design plugin
+- Claude paid plan for MCP support
+- User-specific token from plugin setup
 
 ## Common Patterns in Working MCPs
 
@@ -180,8 +203,8 @@ This directory contains documentation for MCP servers that are working correctly
 
 ## Statistics
 
-- **Total Working MCPs**: 8
-- **NPX-based**: 4 (50%)
-- **Python-based**: 2 (25%)
-- **Docker-based**: 1 (12.5%)
-- **Node.js direct**: 1 (12.5%)
+- **Total Working MCPs**: 9
+- **NPX-based**: 4 (44.4%)
+- **Python-based**: 3 (33.3%) - includes uvx/mcp-proxy
+- **Docker-based**: 1 (11.1%)
+- **Node.js direct**: 1 (11.1%)
